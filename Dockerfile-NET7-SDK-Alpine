@@ -1,0 +1,9 @@
+# The base image
+FROM alpine:latest
+
+# Upgrade the core packages
+RUN apk upgrade --no-cache
+
+# Install dotnet7-runtime package 
+RUN apk add --no-cache dotnet7-sdk
+
