@@ -9,8 +9,8 @@ FROM alpine:latest
 RUN apk update \
 	&& apk upgrade --no-cache
 
-# Install dotnet7-runtime package 
-RUN apk add --no-cache dotnet7-sdk
+# Install dotnet6-runtime package 
+RUN apk add --no-cache dotnet6-sdk
 
 # Install other common required packages
 RUN apk add --no-cache git
